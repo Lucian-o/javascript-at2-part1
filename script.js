@@ -33,3 +33,22 @@ numbers.splice(numbers.indexOf(31), 1);
 
 // Displays a copy of the array after removal.
 console.log("Array after removal:", [...numbers]);
+
+    // B1.6: Searches array one element at a time for value.
+// Returns the matching index, or -1 if value is not found.
+function sequentialSearch(array, value) {
+    // Tracks the index of the element currently being checked.
+    for (let index = 0; index < array.length; index++) {
+        if (array[index] === value) {
+            return index;
+        }
+    }
+
+    return -1;
+}
+
+// Searches for a number that exists in the final array.
+console.log("Sequential search for 20:", sequentialSearch(numbers, 20));
+
+// Searches for a number that does not exist in the final array.
+console.log("Sequential search for 8:", sequentialSearch(numbers, 8));
