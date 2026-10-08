@@ -12,3 +12,8 @@ console.log("Initial array:", [...numbers]);
 numbers.push(19, 23, 30);
 numbers.sort((firstNumber, secondNumber) => firstNumber - secondNumber);
 console.log("Array after insertion:", [...numbers]);
+
+    // B1.5
+numbers.splice(numbers.indexOf(8), 1);
+numbers.splice(numbers.indexOf(31), 1);
+console.log("Array after removal:", [...numbers]);
