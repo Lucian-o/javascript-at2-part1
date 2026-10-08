@@ -7,3 +7,8 @@ console.log("Initial array:", [...numbers]);
     // B1.3
 numbers.sort((firstNumber, secondNumber) => firstNumber - secondNumber);
 console.log("Initial array:", [...numbers]);
+
+    // B1.4
+numbers.push(19, 23, 30);
+numbers.sort((firstNumber, secondNumber) => firstNumber - secondNumber);
+console.log("Array after insertion:", [...numbers]);
